@@ -75,12 +75,14 @@ namespace CarLotSimulator
             myCar.MakeHonkNoise();
             danCar.MakeHonkNoise();
             samCar.MakeHonkNoise();
-            
-            
+
+            Console.WriteLine($"Number of cars in our lot {CarLot.numberOfCars}: ");
+
             foreach (var car in lot.Cars)
             {
-                Console.WriteLine($"Year: {car.Year} Make: {car.Make} Model: {car.Model}");
+                Console.WriteLine($"Year: {car.Year}, Make: {car.Make}, Model: {car.Model}");
             }
+            
         }
 
         
